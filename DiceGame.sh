@@ -11,6 +11,10 @@ res="Y"
 # Inputs for player name and if they would like to roll the dice
 echo -n "Please Enter First Name: "
 read -r name
+while [[ "${#name}" -le 1 ]]; do
+	echo -n "Name Must Be Longer Than One Character; Please Try Again: "
+	read -r name
+done
 
 while [[ "$res" == "Y" || "$res" == "y" ]]; do
  
@@ -24,7 +28,7 @@ while [[ "$res" == "Y" || "$res" == "y" ]]; do
 #		echo "$res"
 		echo ""$name": $diceRoll" >> ./DiceRollStats.txt
 	else
-		echo "Invalid selection. Kill..."
+		echo "THANKS FOR PLAYING!"
 		echo "$res" >> ./DiceRollStats.txt
 	fi
 done
