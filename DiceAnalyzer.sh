@@ -1,7 +1,18 @@
 #!/bin/bash
-source /mnt/c/Revature/DiceGame-mknode/FunctionLibrary.sh
 
-diceStats="/mnt/c/Revature/DiceGame-mknode/DiceRollStats.txt"
+path="/mnt"
+
+if ls "$path" >/dev/null 2>&1; then
+    path="/mnt"
+else
+    path=""
+fi
+
+source "$path"/c/Revature/DiceGame-mknode/FunctionLibrary.sh
+
+
+
+diceStats=""$path"/c/Revature/DiceGame-mknode/DiceRollStats.txt"
 
 # Initialize arrays; users and freq are associative arrays
 diceRollsArr=()
@@ -37,30 +48,30 @@ while read -r line; do
     fi
 done < "$diceStats"
 
-echo -n "DICE GAME STATS: " >> /mnt/c/Revature/DiceGame-mknode/DiceStatAnalysis.txt && date >> /mnt/c/Revature/DiceGame-mknode/DiceStatAnalysis.txt
+echo -n "DICE GAME STATS: " >> "$path"/c/Revature/DiceGame-mknode/DiceStatAnalysis.txt && date >> "$path"/c/Revature/DiceGame-mknode/DiceStatAnalysis.txt
 
-echo -e "\nTotal Amount of Rolls: \n${#diceRollsArr[*]}" >> /mnt/c/Revature/DiceGame-mknode/DiceStatAnalysis.txt
+echo -e "\nTotal Amount of Rolls: \n${#diceRollsArr[*]}" >> "$path"/c/Revature/DiceGame-mknode/DiceStatAnalysis.txt
 
-echo -e "\nUsers and Roll Count:" >> /mnt/c/Revature/DiceGame-mknode/DiceStatAnalysis.txt
+echo -e "\nUsers and Roll Count:" >> "$path"/c/Revature/DiceGame-mknode/DiceStatAnalysis.txt
 for user in "${!users[@]}"; do 
-    echo "$user: ${users[$user]}" >> /mnt/c/Revature/DiceGame-mknode/DiceStatAnalysis.txt
+    echo "$user: ${users[$user]}" >> "$path"/c/Revature/DiceGame-mknode/DiceStatAnalysis.txt
 done
 
-echo -e "\nFrequency of Each Number:" >> /mnt/c/Revature/DiceGame-mknode/DiceStatAnalysis.txt
-roll_freq roll_frequ "/mnt/c/Revature/DiceGame-mknode/DiceRollStats.txt" "/mnt/c/Revature/DiceGame-mknode/DiceStatAnalysis.txt"
+echo -e "\nFrequency of Each Number:" >> "$path"/c/Revature/DiceGame-mknode/DiceStatAnalysis.txt
+roll_freq roll_frequ ""$path"/c/Revature/DiceGame-mknode/DiceRollStats.txt" ""$path"/c/Revature/DiceGame-mknode/DiceStatAnalysis.txt"
 
-echo -e "\nSum of All Rolls:" >> /mnt/c/Revature/DiceGame-mknode/DiceStatAnalysis.txt
-sum "${diceRollsArr[@]}" >> /mnt/c/Revature/DiceGame-mknode/DiceStatAnalysis.txt
+echo -e "\nSum of All Rolls:" >> "$path"/c/Revature/DiceGame-mknode/DiceStatAnalysis.txt
+sum "${diceRollsArr[@]}" >> "$path"/c/Revature/DiceGame-mknode/DiceStatAnalysis.txt
 
-echo -e "\nAverage of Rolls:" >> /mnt/c/Revature/DiceGame-mknode/DiceStatAnalysis.txt
-avg "${diceRollsArr[@]}" >> /mnt/c/Revature/DiceGame-mknode/DiceStatAnalysis.txt
+echo -e "\nAverage of Rolls:" >> "$path"/c/Revature/DiceGame-mknode/DiceStatAnalysis.txt
+avg "${diceRollsArr[@]}" >> "$path"/c/Revature/DiceGame-mknode/DiceStatAnalysis.txt
 
-echo -e "\nMode of Rolls:" >> /mnt/c/Revature/DiceGame-mknode/DiceStatAnalysis.txt
-mode_num "${diceRollsArr[@]}" >> /mnt/c/Revature/DiceGame-mknode/DiceStatAnalysis.txt
+echo -e "\nMode of Rolls:" >> "$path"/c/Revature/DiceGame-mknode/DiceStatAnalysis.txt
+mode_num "${diceRollsArr[@]}" >> "$path"/c/Revature/DiceGame-mknode/DiceStatAnalysis.txt
 
-echo "------------------------------------------------" >> /mnt/c/Revature/DiceGame-mknode/DiceStatAnalysis.txt
+echo "------------------------------------------------" >> "$path"/c/Revature/DiceGame-mknode/DiceStatAnalysis.txt
 
-echo >> /mnt/c/Revature/DiceGame-mknode/DiceStatAnalysis.txt
+echo >> "$path"/c/Revature/DiceGame-mknode/DiceStatAnalysis.txt
 
 #roll_count "${diceRollsArr[@]}"
 #echo "${uniqueUsers[*]}"
