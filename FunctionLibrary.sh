@@ -69,14 +69,14 @@ function roll_freq() {
         if [[ "$num" =~ ^[1-6]$ ]]; then 
             (( array["$num"]++ ))
         fi
-    done < ./"$file"
+    done < "$file"
 
 #    for num in "${!array[@]}"; do 
 #        echo "#$num: ${array[$num]}" >> ./"$file2"
 #    done
 
     for i in {1..6}; do
-        echo "#$i: ${array[$i]}" >> ./"$file2"
+        echo "#$i: ${array[$i]}" >> "$file2"
     done
 }
 

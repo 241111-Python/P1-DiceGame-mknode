@@ -1,7 +1,7 @@
 #!/bin/bash
-source ./FunctionLibrary.sh
+source /mnt/c/Revature/DiceGame-mknode/FunctionLibrary.sh
 
-diceStats="DiceRollStats.txt"
+diceStats="/mnt/c/Revature/DiceGame-mknode/DiceRollStats.txt"
 
 # Initialize arrays; users and freq are associative arrays
 diceRollsArr=()
@@ -32,35 +32,35 @@ done < "$diceStats"
 while read -r line; do
     user="${line%%:*}"
 
-    if [[ ${#user} -gt 1 && ! " ${users[@]} " =~ " ${user} "  ]]; then 
+    if [[ ${#user} -gt 1 && ! " ${users[@]} " =~ " ${user} "  ]]; then  
         (( users["$user"]++ ))
     fi
 done < "$diceStats"
 
-echo -n "DICE GAME STATS: " >> ./DiceStatAnalysis.txt && date >> ./DiceStatAnalysis.txt
+echo -n "DICE GAME STATS: " >> /mnt/c/Revature/DiceGame-mknode/DiceStatAnalysis.txt && date >> /mnt/c/Revature/DiceGame-mknode/DiceStatAnalysis.txt
 
-echo -e "\nTotal Amount of Rolls: \n${#diceRollsArr[*]}" >> ./DiceStatAnalysis.txt
+echo -e "\nTotal Amount of Rolls: \n${#diceRollsArr[*]}" >> /mnt/c/Revature/DiceGame-mknode/DiceStatAnalysis.txt
 
-echo -e "\nUsers and Roll Count:" >> ./DiceStatAnalysis.txt
+echo -e "\nUsers and Roll Count:" >> /mnt/c/Revature/DiceGame-mknode/DiceStatAnalysis.txt
 for user in "${!users[@]}"; do 
-    echo "$user: ${users[$user]}" >> ./DiceStatAnalysis.txt
+    echo "$user: ${users[$user]}" >> /mnt/c/Revature/DiceGame-mknode/DiceStatAnalysis.txt
 done
 
-echo -e "\nFrequency of Each Number:" >> ./DiceStatAnalysis.txt
-roll_freq roll_frequ "DiceRollStats.txt" "DiceStatAnalysis.txt"
+echo -e "\nFrequency of Each Number:" >> /mnt/c/Revature/DiceGame-mknode/DiceStatAnalysis.txt
+roll_freq roll_frequ "/mnt/c/Revature/DiceGame-mknode/DiceRollStats.txt" "/mnt/c/Revature/DiceGame-mknode/DiceStatAnalysis.txt"
 
-echo -e "\nSum of All Rolls:" >> ./DiceStatAnalysis.txt
-sum "${diceRollsArr[@]}" >> ./DiceStatAnalysis.txt
+echo -e "\nSum of All Rolls:" >> /mnt/c/Revature/DiceGame-mknode/DiceStatAnalysis.txt
+sum "${diceRollsArr[@]}" >> /mnt/c/Revature/DiceGame-mknode/DiceStatAnalysis.txt
 
-echo -e "\nAverage of Rolls:" >> ./DiceStatAnalysis.txt
-avg "${diceRollsArr[@]}" >> ./DiceStatAnalysis.txt
+echo -e "\nAverage of Rolls:" >> /mnt/c/Revature/DiceGame-mknode/DiceStatAnalysis.txt
+avg "${diceRollsArr[@]}" >> /mnt/c/Revature/DiceGame-mknode/DiceStatAnalysis.txt
 
-echo -e "\nMode of Rolls:" >> ./DiceStatAnalysis.txt
-mode_num "${diceRollsArr[@]}" >> ./DiceStatAnalysis.txt
+echo -e "\nMode of Rolls:" >> /mnt/c/Revature/DiceGame-mknode/DiceStatAnalysis.txt
+mode_num "${diceRollsArr[@]}" >> /mnt/c/Revature/DiceGame-mknode/DiceStatAnalysis.txt
 
-echo "------------------------------------------------" >> ./DiceStatAnalysis.txt
+echo "------------------------------------------------" >> /mnt/c/Revature/DiceGame-mknode/DiceStatAnalysis.txt
 
-echo >> ./DiceStatAnalysis.txt
+echo >> /mnt/c/Revature/DiceGame-mknode/DiceStatAnalysis.txt
 
 #roll_count "${diceRollsArr[@]}"
 #echo "${uniqueUsers[*]}"
