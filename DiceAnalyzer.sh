@@ -7,7 +7,7 @@ diceStats="DiceRollStats.txt"
 diceRollsArr=()
 uniqueUsers=()
 declare -A users
-declare -A freq
+declare -A roll_frequ
 
 # Make array with the values of each dice roll
 while read -r line; do
@@ -26,6 +26,9 @@ while read -r line; do
     fi
 done < "$diceStats"
 
+
+
+# Make associative array with each unique user and how many times they've rolled
 while read -r line; do
     user="${line%%:*}"
 
@@ -34,19 +37,31 @@ while read -r line; do
     fi
 done < "$diceStats"
 
+echo -n "DICE GAME STATS: " >> ./DiceStatAnalysis.txt && date >> ./DiceStatAnalysis.txt
 
-echo "${diceRollsArr[@]}"
-echo "Rolls Array Length: ${#diceRollsArr[*]}"
+echo -e "\nTotal Amount of Rolls: \n${#diceRollsArr[*]}" >> ./DiceStatAnalysis.txt
 
-echo "${uniqueUsers[*]}"
-echo "Array Length: ${#uniqueUsers[*]}"
-
+echo -e "\nUsers and Roll Count:" >> ./DiceStatAnalysis.txt
 for user in "${!users[@]}"; do 
-    echo "$user: ${users[$user]}" 
+    echo "$user: ${users[$user]}" >> ./DiceStatAnalysis.txt
 done
 
-sum "${diceRollsArr[@]}"
-avg "${diceRollsArr[@]}"
-mode_num "${diceRollsArr[@]}"
+echo -e "\nFrequency of Each Number:" >> ./DiceStatAnalysis.txt
+roll_freq roll_frequ "DiceRollStats.txt" "DiceStatAnalysis.txt"
+
+echo -e "\nSum of All Rolls:" >> ./DiceStatAnalysis.txt
+sum "${diceRollsArr[@]}" >> ./DiceStatAnalysis.txt
+
+echo -e "\nAverage of Rolls:" >> ./DiceStatAnalysis.txt
+avg "${diceRollsArr[@]}" >> ./DiceStatAnalysis.txt
+
+echo -e "\nMode of Rolls:" >> ./DiceStatAnalysis.txt
+mode_num "${diceRollsArr[@]}" >> ./DiceStatAnalysis.txt
+
+echo "------------------------------------------------" >> ./DiceStatAnalysis.txt
+
+echo >> ./DiceStatAnalysis.txt
 
 #roll_count "${diceRollsArr[@]}"
+#echo "${uniqueUsers[*]}"
+#echo "Array Length: ${#uniqueUsers[*]}"

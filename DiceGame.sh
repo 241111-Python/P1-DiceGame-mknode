@@ -16,9 +16,10 @@ while [[ "${#name}" -le 1 ]]; do
 	read -r name
 done
 
+#Loop for user to roll dice; provides a choice if they would like to keep rolling or not
 while [[ "$res" == "Y" || "$res" == "y" ]]; do
  
-	echo -n "Would you like to roll the dice? (INPUT Y TO ROLL): "
+	echo -n "Would you like to roll the dice? (INPUT Y TO ROLL/ANY OTHER CHARACTER TO QUIT): "
 	read -r res
 
 	if [[ "$res" = "Y" || "$res" == "y" ]]; then 

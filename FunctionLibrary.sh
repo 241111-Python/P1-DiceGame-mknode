@@ -57,12 +57,28 @@ function mode_num() {
     echo "$mode"
 }
 
-#user_freq
+function roll_freq() {
+# Use -n to call the array by the reference
+    local -n array=$1
+    local file=$2
+    local file2=$3
 
-#exitCount() {
-#    local array=("$@")
+    while read -r line; do
+        num="${line#*: }"
 
-#    echo ""
-#}
+        if [[ "$num" =~ ^[1-6]$ ]]; then 
+            (( array["$num"]++ ))
+        fi
+    done < ./"$file"
+
+#    for num in "${!array[@]}"; do 
+#        echo "#$num: ${array[$num]}" >> ./"$file2"
+#    done
+
+    for i in {1..6}; do
+        echo "#$i: ${array[$i]}" >> ./"$file2"
+    done
+}
+
 
 "$@"

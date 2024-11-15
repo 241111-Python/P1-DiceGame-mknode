@@ -77,3 +77,20 @@ Kief: 2
 Kief: 3
 Kief: 2
 n
+Tyler: 3
+Tyler: 6
+Tyler: 5
+Tyler: 2
+Tyler: 5
+Tyler: 3
+Tyler: 6
+Tyler: 4
+Tyler: 2
+Tyler: 4
+Tyler: 5
+Tyler: 4
+Tyler: 6
+Tyler: 2
+Tyler: 3
+Tyler: 2
+k
