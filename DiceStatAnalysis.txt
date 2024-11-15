@@ -1330,3 +1330,400 @@ Mode of Rolls:
 2
 ------------------------------------------------
 
+DICE GAME STATS: Fri Nov 15 10:45:01 EST 2024
+
+Total Amount of Rolls: 
+162
+
+Users and Roll Count:
+Josh: 5
+Markief: 25
+Lynn: 3
+Kief: 65
+Mark: 6
+Megan: 1
+Tyler: 16
+Jeremiah: 16
+Kenny: 25
+Total Number of Users: 9
+Average Amount of Rolls: 18
+
+Frequency of Each Number:
+#1: 26
+#2: 31
+#3: 29
+#4: 22
+#5: 24
+#6: 30
+
+Sum of All Rolls:
+563
+
+Average of Rolls:
+3
+
+Mode of Rolls:
+2
+------------------------------------------------
+
+DICE GAME STATS: Fri Nov 15 10:50:01 EST 2024
+
+Total Amount of Rolls: 
+162
+
+Users and Roll Count:
+Josh: 5
+Markief: 25
+Lynn: 3
+Kief: 65
+Mark: 6
+Megan: 1
+Tyler: 16
+Jeremiah: 16
+Kenny: 25
+Total Number of Users: 9
+Average Amount of Rolls: 18
+
+Frequency of Each Number:
+#1: 26
+#2: 31
+#3: 29
+#4: 22
+#5: 24
+#6: 30
+
+Sum of All Rolls:
+563
+
+Average of Rolls:
+3
+
+Mode of Rolls:
+2
+------------------------------------------------
+
+DICE GAME STATS: Fri Nov 15 10:55:01 EST 2024
+
+Total Amount of Rolls: 
+178
+
+Users and Roll Count:
+Josh: 5
+Markief: 41
+Lynn: 3
+Kief: 65
+Mark: 6
+Megan: 1
+Tyler: 16
+Jeremiah: 16
+Kenny: 25
+Total Number of Users: 9
+Average Amount of Rolls: 19
+
+Frequency of Each Number:
+#1: 30
+#2: 33
+#3: 33
+#4: 23
+#5: 26
+#6: 33
+
+Sum of All Rolls:
+615
+
+Average of Rolls:
+3
+
+Mode of Rolls:
+6
+------------------------------------------------
+
+DICE GAME STATS: Fri Nov 15 11:00:01 EST 2024
+
+Total Amount of Rolls: 
+178
+
+Users and Roll Count:
+Josh: 5
+Markief: 41
+Lynn: 3
+Kief: 65
+Mark: 6
+Megan: 1
+Tyler: 16
+Jeremiah: 16
+Kenny: 25
+Total Number of Users: 9
+Average Amount of Rolls: 19
+
+Frequency of Each Number:
+#1: 30
+#2: 33
+#3: 33
+#4: 23
+#5: 26
+#6: 33
+
+Sum of All Rolls:
+615
+
+Average of Rolls:
+3
+
+Mode of Rolls:
+6
+------------------------------------------------
+
+DICE GAME STATS: Fri Nov 15 11:05:01 EST 2024
+
+Total Amount of Rolls: 
+178
+
+Users and Roll Count:
+Josh: 5
+Markief: 41
+Lynn: 3
+Kief: 65
+Mark: 6
+Megan: 1
+Tyler: 16
+Jeremiah: 16
+Kenny: 25
+Total Number of Users: 9
+Average Amount of Rolls: 19
+
+Frequency of Each Number:
+#1: 30
+#2: 33
+#3: 33
+#4: 23
+#5: 26
+#6: 33
+
+Sum of All Rolls:
+615
+
+Average of Rolls:
+3
+
+Mode of Rolls:
+6
+------------------------------------------------
+
+DICE GAME STATS: Fri Nov 15 11:10:01 EST 2024
+
+Total Amount of Rolls: 
+178
+
+Users and Roll Count:
+Josh: 5
+Markief: 41
+Lynn: 3
+Kief: 65
+Mark: 6
+Megan: 1
+Tyler: 16
+Jeremiah: 16
+Kenny: 25
+Total Number of Users: 9
+Average Amount of Rolls: 19
+
+Frequency of Each Number:
+#1: 30
+#2: 33
+#3: 33
+#4: 23
+#5: 26
+#6: 33
+
+Sum of All Rolls:
+615
+
+Average of Rolls:
+3
+
+Mode of Rolls:
+6
+------------------------------------------------
+
+DICE GAME STATS: Fri Nov 15 11:15:02 EST 2024
+
+Total Amount of Rolls: 
+178
+
+Users and Roll Count:
+Josh: 5
+Markief: 41
+Lynn: 3
+Kief: 65
+Mark: 6
+Megan: 1
+Tyler: 16
+Jeremiah: 16
+Kenny: 25
+Total Number of Users: 9
+Average Amount of Rolls: 19
+
+Frequency of Each Number:
+#1: 30
+#2: 33
+#3: 33
+#4: 23
+#5: 26
+#6: 33
+
+Sum of All Rolls:
+615
+
+Average of Rolls:
+3
+
+Mode of Rolls:
+6
+------------------------------------------------
+
+DICE GAME STATS: Fri Nov 15 11:20:01 EST 2024
+
+Total Amount of Rolls: 
+178
+
+Users and Roll Count:
+Josh: 5
+Markief: 41
+Lynn: 3
+Kief: 65
+Mark: 6
+Megan: 1
+Tyler: 16
+Jeremiah: 16
+Kenny: 25
+Total Number of Users: 9
+Average Amount of Rolls: 19
+
+Frequency of Each Number:
+#1: 30
+#2: 33
+#3: 33
+#4: 23
+#5: 26
+#6: 33
+
+Sum of All Rolls:
+615
+
+Average of Rolls:
+3
+
+Mode of Rolls:
+6
+------------------------------------------------
+
+DICE GAME STATS: Fri Nov 15 11:25:01 EST 2024
+
+Total Amount of Rolls: 
+178
+
+Users and Roll Count:
+Josh: 5
+Markief: 41
+Lynn: 3
+Kief: 65
+Mark: 6
+Megan: 1
+Tyler: 16
+Jeremiah: 16
+Kenny: 25
+Total Number of Users: 9
+Average Amount of Rolls: 19
+
+Frequency of Each Number:
+#1: 30
+#2: 33
+#3: 33
+#4: 23
+#5: 26
+#6: 33
+
+Sum of All Rolls:
+615
+
+Average of Rolls:
+3
+
+Mode of Rolls:
+6
+------------------------------------------------
+
+DICE GAME STATS: Fri Nov 15 11:30:01 EST 2024
+
+Total Amount of Rolls: 
+178
+
+Users and Roll Count:
+Josh: 5
+Markief: 41
+Lynn: 3
+Kief: 65
+Mark: 6
+Megan: 1
+Tyler: 16
+Jeremiah: 16
+Kenny: 25
+Total Number of Users: 9
+Average Amount of Rolls: 19
+
+Frequency of Each Number:
+#1: 30
+#2: 33
+#3: 33
+#4: 23
+#5: 26
+#6: 33
+
+Sum of All Rolls:
+615
+
+Average of Rolls:
+3
+
+Mode of Rolls:
+6
+------------------------------------------------
+
+DICE GAME STATS: Fri Nov 15 11:35:01 EST 2024
+
+Total Amount of Rolls: 
+188
+
+Users and Roll Count:
+Josh: 5
+Markief: 41
+Lynn: 3
+Kief: 65
+Mark: 6
+Megan: 1
+Kim: 10
+Tyler: 16
+Jeremiah: 16
+Kenny: 25
+Total Number of Users: 10
+Average Amount of Rolls: 18
+
+Frequency of Each Number:
+#1: 31
+#2: 37
+#3: 35
+#4: 23
+#5: 27
+#6: 35
+
+Sum of All Rolls:
+647
+
+Average of Rolls:
+3
+
+Mode of Rolls:
+2
+------------------------------------------------
+

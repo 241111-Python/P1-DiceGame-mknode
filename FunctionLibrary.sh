@@ -23,6 +23,7 @@ function sum(){
     echo "$sum"
 }
 
+# Uses sum function to make code cleaner
 function avg() {
     local array=("$@")
     local sum=$(sum "${array[@]}")
@@ -56,6 +57,7 @@ function mode_num() {
 
     echo "$mode"
 }
+# Needs changed to account for multiple numbers being the mode
 
 function roll_freq() {
 # Use -n to call the array by the reference

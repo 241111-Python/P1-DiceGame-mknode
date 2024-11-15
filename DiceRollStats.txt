@@ -170,3 +170,31 @@ Kief: 5
 Kief: 4
 Kief: 4
 l
+Markief: 3
+Markief: 5
+Markief: 6
+Markief: 1
+Markief: 3
+Markief: 5
+Markief: 3
+Markief: 3
+Markief: 6
+Markief: 1
+Markief: 1
+Markief: 4
+Markief: 1
+Markief: 6
+Markief: 2
+Markief: 2
+g
+Kim: 1
+Kim: 2
+Kim: 3
+Kim: 2
+Kim: 6
+Kim: 5
+Kim: 2
+Kim: 3
+Kim: 6
+Kim: 2
+k

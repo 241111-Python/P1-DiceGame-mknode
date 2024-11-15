@@ -22,6 +22,7 @@ declare -A roll_frequ
 
 # Make array with the values of each dice roll
 while read -r line; do
+    # Parameter expansion/variable substitution - substring removal
     roll="${line#*: }"
 
     if [[ "$roll" =~ ^[1-6]$ ]]; then
@@ -36,8 +37,6 @@ while read -r line; do
         uniqueUsers+=("$user")
     fi
 done < "$diceStats"
-
-
 
 # Make associative array with each unique user and how many times they've rolled
 while read -r line; do

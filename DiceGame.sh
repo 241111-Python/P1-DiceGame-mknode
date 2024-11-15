@@ -1,6 +1,6 @@
 #!/usr/bin/bash
 
-# Dice Roller used to gather statistics of which number is rolled
+# Dice Roller used to gather statistics of which number is rolled and who rolled
 
 #Variables to set values that RANDOM can be below
 min=1
