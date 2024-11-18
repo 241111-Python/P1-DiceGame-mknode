@@ -23,7 +23,6 @@ function sum(){
     echo "$sum"
 }
 
-# Uses sum function to make code cleaner
 function avg() {
     local array=("$@")
     local sum=$(sum "${array[@]}")
@@ -72,10 +71,6 @@ function roll_freq() {
             (( array["$num"]++ ))
         fi
     done < "$file"
-
-#    for num in "${!array[@]}"; do 
-#        echo "#$num: ${array[$num]}" >> ./"$file2"
-#    done
 
     for i in {1..6}; do
         echo "#$i: ${array[$i]}" >> "$file2"
